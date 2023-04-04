@@ -3,5 +3,23 @@
 version = 3
 
 [[package]]
+name = "audio"
+version = "0.2.0-alpha.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "87fcbd5d893291930d4d9a067df2211adf4f527ed3f4809094eb4cbdb0a7cfef"
+dependencies = [
+ "audio-core",
+]
+
+[[package]]
+name = "audio-core"
+version = "0.2.0-alpha.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "239724b78bf88d3ae1535c47ecbbd091da6955eca6984a3e5de3a082fe11c15c"
+
+[[package]]
 name = "rust_meditation_timer"
 version = "0.1.0"
+dependencies = [
+ "audio",
+]
